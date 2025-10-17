@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🗂️ Gestor de Tareas</title>
+  <style>
+    :root {
+      --primary: #0D47A1;
+      --accent: #00BFA6;
+      --surface: #1E1E1E;
+      --text: #FFFFFF;
+    }
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: var(--primary);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: var(--primary);
+      padding: 40px 16px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2em;
+      margin: 0;
+    }
+
+    nav {
+      background-color: #002b6e;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      padding: 12px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    section {
+      background-color: var(--surface);
+      border-radius: 12px;
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 32px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    }
+
+    h2 {
+      text-align: center;
+      color: var(--accent);
+    }
+
+    p {
+      text-align: center;
+      color: rgba(255,255,255,0.8);
+    }
+
+    .card {
+      background-color: #2a2a2c;
+      border-radius: 10px;
+      padding: 16px;
+      margin: 12px 0;
+      display: flex;
+      align-items: center;
+      font-size: 1.1em;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    }
+
+    .emoji {
+      font-size: 1.6em;
+      margin-right: 12px;
+    }
+
+    .footer {
+      background-color: var(--primary);
+      color: var(--text);
+      text-align: center;
+      padding: 20px;
+      font-size: 1em;
+      box-shadow: 0 -2px 6px rgba(0,0,0,0.3);
+    }
+
+    .highlight {
+      text-align: center;
+      color: var(--accent);
+      font-weight: bold;
+      font-size: 1.1em;
+      margin-top: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      font-weight: bold;
+      padding: 12px 28px;
+      border-radius: 20px;
+      text-decoration: none;
+      margin-top: 24px;
+      transition: background 0.3s;
+    }
+
+    .button:hover {
+      background: #009e8c;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header>
+    <h1>🗂️ Gestor de Tareas</h1>
+    <p>Organiza tus pendientes y mejora tu productividad diaria</p>
+  </header>
+
+  <!-- MENÚ DE NAVEGACIÓN -->
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#tareas">Mis Tareas</a>
+    <a href="#progreso">Progreso</a>
+    <a href="#consejos">Consejos</a>
+    <a href="#acerca">Acerca de</a>
+  </nav>
+
+  <!-- SECCIÓN INICIO -->
+  <section id="inicio">
+    <h2>Bienvenido a tu Gestor de Tareas 🗂️</h2>
+    <p>Organiza tus pendientes y mejora tu productividad diaria.</p>
+    <div style="text-align:center;">
+      <a href="#tareas" class="button">Comenzar</a>
+    </div>
+  </section>
+
+  <!-- SECCIÓN MIS TAREAS -->
+  <section id="tareas">
+    <h2>Mis Tareas</h2>
+    <p>Lista de actividades pendientes:</p>
+    <div class="card"><span class="emoji">📄</span> Entregar reporte de proyecto ✔️</div>
+    <div class="card"><span class="emoji">📧</span> Revisar correos ✔️</div>
+    <div class="card"><span class="emoji">👥</span> Reunión de equipo ✔️</div>
+    <div class="card"><span class="emoji">📅</span> Planificar la próxima semana ✔️</div>
+  </section>
+
+  <!-- SECCIÓN PROGRESO -->
+  <section id="progreso">
+    <h2>Progreso General</h2>
+    <p>Revisa tu avance en las tareas completadas</p>
+    <div class="card"><span class="emoji">✅</span> Completadas: 5 de 8 tareas</div>
+    <div class="card"><span class="emoji">🕓</span> Pendientes: 3 por hacer</div>
+  </section>
+
+  <!-- SECCIÓN CONSEJOS -->
+  <section id="consejos">
+    <h2>Consejos de Productividad</h2>
+    <p>Ideas prácticas para mejorar tu rendimiento diario</p>
+    <div class="card"><span class="emoji">💡</span> Prioriza tus tareas más importantes primero</div>
+    <div class="card"><span class="emoji">☕</span> Haz pequeñas pausas para mantener la concentración</div>
+    <div class="card"><span class="emoji">🎯</span> Evita multitareas, enfócate en una a la vez</div>
+    <div class="card"><span class="emoji">🌙</span> Revisa tus pendientes antes de dormir</div>
+    <div class="highlight">✨ Organiza tu día, alcanza tus metas ✨</div>
+  </section>
+
+  <!-- SECCIÓN ACERCA DE -->
+  <section id="acerca">
+    <h2>Acerca de</h2>
+    <p><strong>Sobre el Gestor de Tareas</strong></p>
+    <p>Esta aplicación fue diseñada para ayudarte a organizar tus pendientes y alcanzar tus metas diarias de manera eficiente.</p>
+  </section>
+
+  <!-- PIE DE PÁGINA -->
+  <div class="footer">
+    © 2025 Gestor de Tareas — Creada por Esli con Jetpack Compose 💙
+  </div>
+
+</body>
+</html>

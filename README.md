@@ -1,5 +1,7 @@
 # Código Fuente de Renta Mobiliario App
 
+[Enlace a los archivos en Google Drive](https://drive.google.com/drive/folders/17DRwnZPzZQCkaZLUdQ-IP1cx3haFxCtN?usp=drive_link)
+
 Este repositorio contiene todo el código fuente de la aplicación 'Renta Mobiliario', documentado por pantalla y funcionalidad.
 Se incluyen capturas de pantalla de los elementos visuales justo encima de su código XML correspondiente.
 
